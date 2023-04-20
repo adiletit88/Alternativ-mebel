@@ -956,57 +956,85 @@ footer{
 }
 .comfort .sec_desc{
 	color: #fff;
-	margin-bottom: 60px;
 	max-width: 792px;
-	margin: 0 auto;
+	margin: 0 auto 60px;
 }
-.comfort_content{
+.comfort_block{
+	align-items: stretch;
+}
+.comfort_item{
+	max-width: 415px;
+	width: calc((100% - 50px) / 3);
 	position: relative;
-	max-width: 232px;
-	height: 315px;
-	background-color: #fff;
-	border-radius: 10px;
 }
-.comfort_content::before,
-.comfort_content::after{
-	content: '';
+.comfort_dialog{
 	position: absolute;
-	left: 50%;
-	top: 35%;
-	transform: translate(-50%, -50%);
+	width: 261px;
+	height: 129px;
+	font-size: 14px;
+	line-height: 19px;
+	color: #242424;
+	right: 0;
+	top: 84px;
+	background: url(../img/icons/diolog.png) center no-repeat;
+	background-size: 100% 100%;
+	z-index: 5;
 }
-.comfort_content::after{
-	background: url(../img/content.img.png) center no-repeat;
-	width: 140px;
-	height: 161px;
+.comfort_item__1 .comfort_dialog{
+	padding: 25px 28px 0 69px;
 }
-.comfort_content.comfort_content__2::after{
-	background: url(../img/content.img-1.png) center no-repeat;
-	width: 140px;
-	height: 161px;
+.comfort_item__2 .comfort_dialog{
+	padding: 25px 46px 0 85px;
 }
-.comfort_content.comfort_content__3::after{
-	background: url(../img/content.img-2.png) center no-repeat;
-	width: 140px;
-	height: 161px;
+.comfort_item__3 .comfort_dialog{
+	padding: 35px 46px 0 85px;
+}
+.comfort_card{
+	width: 232px;
+	background: #fff;
+	box-shadow: 0px 7px 33px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	padding: 17px 0 25px;
+	height: 100%;
 }
 .comfort_name{
+	display: block;
+	text-align: center;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 25px;
 	text-align: center;
-	color: #363636;
-	max-width: 120px;
-	margin: 0 auto;
-	padding-top: 195px;
+	margin: 0 auto 10px;
+	width: 170px;
 }
 .comfort_job{
-	max-width: 147px;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 19px;
+	display: block;
 	text-align: center;
-	margin: 0 auto;
+}
+.comfort_job span{
+	display: block;
+}
+.comfort_img{
+	width: 140px;
+	margin: 0 auto 20px;
+	position: relative;
+}
+.comfort_img img{
+	position: relative;
+	z-index: 2;
+	width: 140px;
+}
+.comfort_img::before{
+	content: '';
+	position: absolute;
+	background: #BE963F;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	z-index: 1;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
 }
 /*reviews*/
 .reviews_in{
@@ -1074,7 +1102,7 @@ footer{
 }
 /*catalog*/
 .catalog{
-	background-image: url(../img/catalog.bg.png);
+	background-image: url(../img/catalog_bg.png);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 	background-position: right 100px top;
