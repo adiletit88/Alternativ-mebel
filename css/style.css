@@ -141,6 +141,24 @@ section{
 	align-items: center;
 	justify-content: space-between;
 }
+.slider-for{
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.slider_for-in{
+	display: block!important;
+}
+.slider-nav{
+	margin: 0 -7px;
+}
+.slider-nav_in{
+	padding: 0 7px;
+}
+.slider-nav_img{
+	border-radius: 5px;
+	overflow: hidden;
+}
 header{
 	color: #fff;
 }
@@ -1207,20 +1225,11 @@ footer{
 }
 .history_in{
 	display: flex;
-}
-.history_img{
-	max-width: 640px;
-	margin-bottom: 25px;
-}
-.history_images{
-	display: flex;
-	justify-content: space-between;
-	max-width: 640px;
-}
-.img{
-	width: 149px;
-	height: 120px;
+	width: 100%;
 }
 .history_right{
 	margin-left: 40px;
+}
+.history_block_left{
+	width: 640px;
 }
