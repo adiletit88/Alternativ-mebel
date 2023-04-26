@@ -28,9 +28,17 @@ $(document).ready(function() {
 
 
   $('.add_btn').on('click', function(){
-    console.log(123)
+    const addParent = $(this).closest('section')
+    const addBlock = addParent.find('.add_block')
+    if($(this).text() === 'Показать ещё'){
+      addBlock.slideDown(300)
+      addBlock.find('.slick-slider').slick('refresh')
+      $(this).text('Скрыть')
+    } else{
+      addBlock.slideUp(300)
+      $(this).text('Показать ещё')
+    }
   })
-
 
 
 })
