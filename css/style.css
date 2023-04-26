@@ -1166,6 +1166,7 @@ footer{
 }
 .recommend_content_left{
 	max-width: 296px;
+	margin: 30px 0px 10px 35px;
 }
 .recommend_content_right{
 	max-width: 242px;
@@ -1174,16 +1175,17 @@ footer{
 .recommend_tit{
 	margin-bottom: 15px;
 }
-.recommend_img{
-	margin: 30px 0px 10px 35px;
+.recommend .slider_for-in img{
+	width: 296px;
+  height: 218px;
 }
 .recommend_images{
 	display: flex;
 	justify-content: space-between;
   margin-left: 35px;
 }
-.img{
-	width: 82px;
+.recommend.slider-nav_in img{
+	width: 92px;
 	height: 74px;
 	color: #18b60a;
 	background: #D5D5D5;
