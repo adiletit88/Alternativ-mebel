@@ -211,6 +211,68 @@ section{
 .add_block{
 	display: none;
 }
+.tag{
+	background: linear-gradient(96.77deg, #F94242 2.86%, #C92D2D 32.26%, #FF7A7A 67.06%, #610000 102.59%);
+	border: 1px solid #C92D2D;
+	box-shadow: 0px 7px 22px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	padding: 5px;
+	width: 212px;
+	height: 73px;
+}
+.tag_in{
+	border: 1px dashed #FF9D9D;
+	border-radius: 15px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.tag_txt{
+	font-family: 'Bebas Neue';
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+	color: #FFFFFF;
+	display: block;
+}
+.tag_txt__big{
+	font-size: 34px;
+	line-height: 34px;
+	margin-top: 2px;
+}
+.widget{
+	background: linear-gradient(146.08deg, #D2B467 26.31%, #ECCD8E 48.18%, #D8BA6F 63.81%);
+	border-radius: 10px 0px 0px 10px;
+	overflow: hidden;
+	width: 110px;
+	height: 400px;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+}
+.w_btn{
+	display: block;
+	padding: 15px 18px;
+	border-bottom: 1px solid #BA9F58;
+}
+.w_btn:last-child{
+	border: none;
+}
+.w_img{
+	display: block;
+	width: 35px;
+	height: 35px;
+	margin: 0 auto 5px;
+}
+.w_txt{
+	font-weight: 500;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	display: block;
+}
 header{
 	color: #fff;
 }
@@ -310,7 +372,15 @@ h1{
 	line-height: 52px;
 	margin-bottom: 38px;
 	display: block;
+	position: relative;
 }
+.main .tag{
+	transform: rotate(-10deg);
+	position: absolute;
+	left: 550px;
+	top: -40px;
+}
+
 .main_list{
 	margin-bottom: 51px;
 }
@@ -1134,13 +1204,15 @@ footer{
 	width: calc((100% - 80px) / 5);
 	margin-bottom: 45px;
 }
-
+.img_btn{
+	position: relative;
+}
 .img_btn::before{
 	content: '';
 	position: absolute;
 	left: 50%;
-	top: 40%;
-	transform: translate(-50%, -100%);
+	top: 50%;
+	transform: translate(-50%, -50%);
 	background: linear-gradient(180deg, #FF7A7A 0%, #C92D2D 100%);
   border-radius: 80px;
 	width: 60px;
@@ -1154,9 +1226,9 @@ footer{
 	border-style: solid;
 	border-width: 11px 0 11px 20px;
 	border-color: transparent transparent transparent #ffffff;
-	left: 47.5%;
-	top: 31.5%;
-	transform: translateY(-50%)
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%)
 }
 .rev_img{
 	max-width: 243px;
