@@ -26,6 +26,12 @@ $(document).ready(function() {
     });
   })
 
+  $('.sale_slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: true
+    });
+
 
   $('.add_btn').on('click', function(){
     const addParent = $(this).closest('section')
@@ -47,6 +53,16 @@ $(document).ready(function() {
         scrollTop: $(href).offset().top
     });
     return false;
+  })
+
+
+  $('.sale_btn').on('click', function(){
+    $('.sale_form.active').removeClass('active')
+    $(this).closest('.sale_slide').find('.sale_form').addClass('active')
+  })
+
+  $('.sale_form-close').on('click', function(){
+    $(this).closest('.sale_form').removeClass('active')
   })
 
 
