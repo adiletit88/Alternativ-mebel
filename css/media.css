@@ -1,9 +1,102 @@
-@media screen and (max-width: 1260px) {
-  .container{
-    max-width: 962px;
-  }
-  @media screen and (max-width: 992px) {
-    
-  }
-  
+@media screen and (max-width: 1500px) {
+	.widget{
+		display: none;
+	}
+}
+@media screen and (max-width: 1400px) {
+	.container{
+		max-width: 1170px;
+	}
+	.history_video-txt{
+		width: 208px;
+	}
+	.enroll_right {
+    max-width: 427px;
+    margin-bottom: -167px;
+	}
+	.enroll_left{
+		padding-bottom: 100px;
+	}
+	.enroll{
+		overflow: hidden;
+	}
+	.time_left {
+    max-width: 456px;
+	}
+	.contract_right {
+    width: 741px;
+	}
+	.contract_link::before{
+		right: -102px;
+	}
+	.dev_left{
+		max-width: 550px;
+	}
+	.technology_right{
+		max-width: 496px;
+	}
+	.sale_content{
+    width: calc(100% - 115px);
+		padding-left: 20px;
+	}
+	.sale_title{
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.sale_img{
+		width: 115px;
+		align-self: stretch;
+	}
+	.sale_img img{
+		height: 100%;
+		width: auto;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.container{
+		max-width: 962px;
+	}
+	.head_link{
+		display: none;
+	}
+	.history_block_left{
+		width: 430px;
+	}
+	.history_tit{
+		margin-bottom: 10px;
+	}
+	.history_list li{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.history_list li:first-child {
+    margin-bottom: 20px;
+	}
+	.history_right{
+		margin-left: 20px;
+	}
+	.recommend_block{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.recommend_content_right{
+		max-width: 100%;
+		width: 100%;
+		padding-left: 0;
+	}
+}
+@media screen and (max-width: 992px) {
+	.container{
+		max-width: 738px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.container{
+		max-width: 546px;
+	}
+}
+@media screen and (max-width: 576px) {
+	.container{
+		max-width: 100%;
+	}
 }
