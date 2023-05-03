@@ -681,6 +681,10 @@ footer{
 .sale .sec_desc{
 	margin-bottom: 60px;
 }
+.sale_slider{
+	margin: 0 -15px;
+	padding-top: 45px;
+}
 .sale_slider-txt{
 	font-size: 14px;
 	line-height: 19px;
@@ -711,7 +715,7 @@ footer{
 	color: #fff;
 }
 .sale_content{
-	padding: 25px 10px 30px 25px;
+	padding: 25px 12px 30px 25px;
 	width: calc(100% - 150px);
 }
 .sale_title{
@@ -755,26 +759,49 @@ footer{
 .sale_form-close{
 	width: 31px;
 	height: 31px;
-	background: #BE963F url(../img/icons/form-close.svg) center no-repeat;
+	background: #F3F3F3 url(../img/icons/form-close.svg) center no-repeat;
 	border-radius: 10px;
 	position: absolute;
 	top: 29px;
 	right: 25px;
 }
+.sale_slider .slick-arrow{
+	font-size: 0;
+	width: 61px;
+	height: 16px;
+	background: url(../img/icons/slider-arrow.png);
+	position: absolute;
+	top: -18px;
+	left: 50%;
+}
 .sale_slider .slick-prev{
-	color: red;
+	transform: rotate(180deg) translateX(50%);
+	margin-left: -110px;
 }
 .sale_slider .slick-next{
-	color: blue;
+	transform: translateX(-50%);
+	margin-left: 110px;
 }
-.sale_slider .slick-dots li button{
+.slick-dots li button{
 	border-radius: 50%;
-	width: 10px;
-	height: 10px;
+	width: 12px;
+	height: 12px;
 	font-size: 0;
 	background: #ACACAC;;
 }
-
+.slick-dots .slick-active button{
+	background: #BE963F;
+}
+.slick-dots{
+  display: flex;
+	justify-content: center;
+}
+.slick-dots li{
+	margin: 0 7px;
+}
+.slick-list{
+	margin-bottom: 30px;
+}
 
 /*technology*/
 .technology{
@@ -1304,6 +1331,7 @@ footer{
 	position: relative;
 	border-radius: 5px;
 	overflow: hidden;
+	display: block;
 }
 .img_btn::before{
 	content: '';
@@ -1554,4 +1582,7 @@ footer{
 }
 .history_video-wrap{
 	justify-content: flex-start;
+}
+.modal{
+	display: none;
 }
