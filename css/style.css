@@ -755,7 +755,7 @@ footer{
 .sale_form-close{
 	width: 31px;
 	height: 31px;
-	background: #F3F3F3 url(../img/icons/form-close.svg) center no-repeat;
+	background: #BE963F url(../img/icons/form-close.svg) center no-repeat;
 	border-radius: 10px;
 	position: absolute;
 	top: 29px;
@@ -772,7 +772,7 @@ footer{
 	width: 10px;
 	height: 10px;
 	font-size: 0;
-	background: #000;
+	background: #ACACAC;;
 }
 
 
