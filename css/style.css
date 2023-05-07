@@ -56,6 +56,9 @@ body{
 	background-color: #242424;
 	color: #fff;
 }
+.dn, .lg{
+	display: none;
+}
 .shadow{
 	position: relative;
 }
@@ -799,9 +802,6 @@ footer{
 .slick-dots li{
 	margin: 0 7px;
 }
-.slick-list{
-	margin-bottom: 30px;
-}
 
 /*technology*/
 .technology{
@@ -833,7 +833,10 @@ footer{
 	left: -5px;
 	transform: rotate(10deg);
 }
-
+.technology .tag_txt{
+	font-size: 28px;
+	line-height: 28px;
+}
 /*plan*/
 .plan{
 	margin-bottom: 90px;
@@ -1197,12 +1200,12 @@ footer{
 .enroll .left_name{
 	position: absolute;
   left: 28%;
-	bottom: 18%;
+	bottom: 126px;
 }
 .enroll .left_job{
 	position: absolute;
 	left: 35%;
-	bottom: 16%;
+	bottom: 100px;
 }
 .enroll .form_txt{
 	max-width: 430px;
