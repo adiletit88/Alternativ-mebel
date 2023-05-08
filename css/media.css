@@ -588,11 +588,41 @@
 	.foot_block__4{
 		order: -1;
 	}
-
 }
 @media screen and (max-width: 768px) {
 	.container{
 		max-width: 546px;
+	}
+	.head_bot,
+	.head_top{
+		display: none;
+	}
+	.main .tag {
+    left: 325px;
+    top: -3px;
+	}
+	.main_btn-txt{
+		font-size: 12px;
+		line-height: 16px;
+		max-width: 255px;
+		margin: 25px 0 0 100px;
+	}
+	.main_btn {
+    max-width: 355px;
+	}
+	.main_btn-txt::before{
+		background-image: url(../img/icons/arrow-white--sm.png);
+		width: 79px;
+		height: 32px;
+		right: 275px;
+    bottom: 0px;
+	}
+	.main .list_ch li{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.main .list_ch{
+		flex-wrap: wrap;
 	}
 }
 @media screen and (max-width: 576px) {
