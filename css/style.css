@@ -102,6 +102,9 @@ section{
 .accent{
 	color: #BE963F;
 }
+.dib{
+	display: inline-block;
+}
 .hover{
 	transition: 0.3s;
 }
@@ -908,7 +911,7 @@ footer{
 .dev .sec_desc{
 	margin-bottom: 70px;
 	font-size: 32px;
-	line-height: 10px;
+	line-height: 40px;
 }
 .dev_left{
 	width: 50%;
@@ -958,8 +961,6 @@ footer{
 .contract .sec_tit{
 	margin: 0 0 127px 0;
 	font-weight: 600;
-	font-size: 42px;
-	line-height: 57px;
 	max-width: 716px;
 	text-align: left;
 }
@@ -1173,6 +1174,7 @@ footer{
 .time_subtxt{
 	max-width: 166px;
   margin: 0 auto;
+  font-weight: 300;
 }
 /*enroll*/
 .enroll{
