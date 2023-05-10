@@ -1332,6 +1332,9 @@ footer{
 	width: calc((100% - 80px) / 5);
 	margin-bottom: 45px;
 }
+.reviews_content_mobil{
+	display: flex;
+}
 .img_btn{
 	position: relative;
 	border-radius: 5px;
