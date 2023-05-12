@@ -950,4 +950,10 @@
 	  font-size: 16px;
 	  line-height: 24px;
 	}
+	.history_video-wrap{
+		justify-content: center;
+	}
+	.history .img_btn{
+		margin-bottom: 20px;
+	}
 }
