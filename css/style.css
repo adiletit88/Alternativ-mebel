@@ -1372,6 +1372,8 @@ footer{
 	text-align: center;
 	margin: 20px 0 10px;
 	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
 }
 .rev_comment{
 	text-align: center;
